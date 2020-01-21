@@ -60,26 +60,7 @@
         };
 
     </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-797705-6', 'auto', {
-            "name": "wnd_header"
-        });
-        ga('wnd_header.set', 'dimension1', 'W2');
-        ga('wnd_header.set', 'anonymizeIp', true);
-        ga('wnd_header.send', 'pageview');
 
-    </script>
 </head>
 
 <body class="l l-01 layout-01 eshop-hide arrow-buttons c-s-n wt-page line-solid  wnd-fe   wnd-eshop">
@@ -123,6 +104,138 @@
                                             </div>
                                         </div>
 
+                                        <!-- ---------------------------------------------- SB ----------------------------------------------- -->
+
+                                        <style>
+                                            @media only screen and (max-width: 765px) {
+
+                                                #sidebar,
+                                                #sidebar .toggle-btn,
+                                                #sidebar.active .toggle-btn span {
+                                                    visibility: visible;
+                                                }
+
+                                                #sidebar {
+                                                    margin-top: -10px;
+                                                    position: fixed;
+                                                    width: 45% !important;
+                                                }
+                                            }
+
+                                            @media only screen and (min-width: 766px) {
+
+                                                #sidebar,
+                                                #sidebar .toggle-btn,
+                                                #sidebar.active .toggle-btn span {
+                                                    visibility: hidden;
+                                                }
+                                            }
+
+
+                                            @media only screen and (max-width: 550px) {
+                                                #sidebar.active {
+                                                    width: 65% !important;
+                                                }
+                                            }
+
+                                            * {
+                                                margin: 0px;
+                                                padding: 0;
+                                                font-family: sans-serif;
+                                            }
+
+                                            #sidebar {
+                                                margin-top: -10px;
+                                                position: fixed;
+                                                width: 45%;
+                                                height: 100%;
+                                                background: #151719;
+                                                right: -45%;
+                                                transition: all 500ms linear;
+                                            }
+
+                                            #sidebar.active {
+                                                right: 0px;
+                                            }
+
+                                            #sidebar ul li {
+                                                color: White;
+                                                list-style: none;
+                                                padding: 23.5px 10px;
+                                                border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+                                                text-align: center;
+                                            }
+
+                                            #sidebar .toggle-btn {
+                                                position: fixed;
+                                                right: 20px;
+                                                top: 17px;
+                                                z-index: 40000;
+                                                transition: all 0.5s;
+                                            }
+
+                                            #sidebar .toggle-btn span {
+                                                display: block;
+                                                width: 30px;
+                                                height: 5px;
+                                                background: #151719;
+                                                margin: 5px 0px;
+                                                transition: all 0.5s;
+                                            }
+
+                                            #sidebar.active .toggle-btn span {
+                                                color: white;
+                                                background-color: white;
+                                                transition: color 500ms linear;
+                                            }
+
+                                            #sidebar ul li a {
+                                                text-decoration: none;
+                                            }
+
+                                            #sidebar ul {
+                                                margin-top: 9px;
+                                            }
+
+                                            #sidebar ul li:hover {
+                                                color: white;
+                                                background-color: gray;
+                                            }
+
+                                        </style>
+
+                                        <div id="sidebar" style="display:hidden">
+                                            <div class="toggle-btn" onclick="toggleSidebar()">
+                                                <span></span> <span></span> <span></span>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="menuclick"><a href="https://templemotors.co.uk">HOME</a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="menuclick"><a href="https://templemotors.co.uk/vehicle-logistics">LOGISTICS</a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="menuclick"><a href="https://templemotors.co.uk/services">SERVICES</a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="menuclick"><a href="https://templemotors.co.uk/sell-your-car">SELL YOUR CAR</a></div>
+                                                </li>
+                                                <li>
+                                                    <div class="menuclick"><a href="https://templemotors.co.uk/contact">CONTACT</a></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <script>
+                                            function toggleSidebar() {
+                                                document.getElementById("sidebar").classList.toggle('active');
+                                            }
+
+                                        </script>
+
+                                        <!-- ---------------------------------------------- SB ----------------------------------------------- -->
+
                                         <nav id="menu">
                                             <div class="menu-font menu-wrapper">
                                                 <ul class="level-1">
@@ -135,7 +248,7 @@
 
                                                     </li>
                                                     <li>
-                                                        <a class="menu-item" href="/services"><span class="menu-item-text">SERVICES </span></a>
+                                                        <a class="menu-item" href="/services"><span class="menu-item-text">SERVICES</span></a>
 
                                                     </li>
                                                     <li>
@@ -146,7 +259,7 @@
                                                         <a class="menu-item" href="/contact"><span class="menu-item-text">CONTACT US</span></a>
 
                                                     </li>
-                                                </ul><span class="more-text">More</span>
+                                                </ul>
                                             </div>
                                         </nav>
 
@@ -383,6 +496,7 @@
             </footer>
         </div>
     </div>
+
     <script type="text/javascript" src="https://d1di2lzuh97fh2.cloudfront.net/files/1i/1iv/1iv4rd.js?ph=9488860436"></script>
     <script src="https://d1di2lzuh97fh2.cloudfront.net/client.fe/js.compiled/lang.en-us.46.js?ph=9488860436" crossorigin="anonymous"></script>
     <script src="https://d1di2lzuh97fh2.cloudfront.net/client.fe/js.compiled/compiled.multi.2-588.js?ph=9488860436" crossorigin="anonymous"></script>

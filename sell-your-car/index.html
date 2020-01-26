@@ -34,6 +34,33 @@
 
     <meta property="og:image" content="media/images/accounting-bill-black-53621.jpg">
 
+    <script>
+        window.checkAndChangeSvgColor = function(c) {
+            try {
+                var a = document.getElementById(c);
+                if (a) {
+                    c = [
+                        ["border", "borderColor"],
+                        ["outline", "outlineColor"],
+                        ["color", "color"]
+                    ];
+                    for (var h, b, d, f = [], e = 0, m = c.length; e < m; e++)
+                        if (h = window.getComputedStyle(a)[c[e][1]].replace(/\s/g, "").match(/^rgb[a]?\(([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})/i)) {
+                            b = "";
+                            for (var g = 1; 3 >= g; g++) b += ("0" + parseInt(h[g], 10).toString(16)).slice(-2);
+                            "0" === b.charAt(0) && (d = parseInt(b.substr(0, 2), 16), d = Math.max(16, d), b = d.toString(16) + b.slice(-4));
+                            f.push(c[e][0] + "=" + b)
+                        } if (f.length) {
+                        var k = a.getAttribute("data-src"),
+                            l = k + (0 > k.indexOf("?") ? "?" : "&") + f.join("&");
+                        a.src != l && (a.src = l, a.outerHTML = a.outerHTML)
+                    }
+                }
+            } catch (n) {}
+        };
+
+    </script>
+
 </head>
 
 <body class="l l-01 layout-01 eshop-hide arrow-buttons c-s-n wt-page line-solid  wnd-fe   wnd-eshop">

@@ -5986,8 +5986,7 @@ body:not(.touched):not(.wnd-cms) .cs-gray .sc-ml .dots li:hover {
 /* ---- FORM --- START ---- */
 
 .form {
-    margin: 0 auto;
-    padding: 0
+    padding: 4% 10%;
 }
 
 .form input,

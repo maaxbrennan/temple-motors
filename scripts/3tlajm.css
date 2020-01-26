@@ -6380,7 +6380,6 @@ body:not(.wnd-cms) .eshop-cart-quantity-button {
     z-index: 9
 }
 
-.header-02 #menu ul.level-1 > li.wnd-active > a > span:after,
 textarea[name="message"] {
     min-height: 65px;
 }

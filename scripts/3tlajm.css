@@ -6380,15 +6380,7 @@ body:not(.wnd-cms) .eshop-cart-quantity-button {
     z-index: 9
 }
 
-.header-02 #menu ul.level-1 > li.hover > a > span:after,
-.header-02 #menu ul.level-1 > li.hover > a > span:before,
-.header-02 #menu ul.level-1 > li.wnd-active-path > a > span:after,
-.header-02 #menu ul.level-1 > li.wnd-active-path > a > span:before,
 .header-02 #menu ul.level-1 > li.wnd-active > a > span:after,
-.header-02 #menu ul.level-1 > li.wnd-active > a > span:before {
-    width: 0%;
-}
-
 textarea[name="message"] {
     min-height: 65px;
 }
@@ -11724,11 +11716,6 @@ body:not(.wnd-cms) .header-02 .logo-borders .logo-text-cell {
         right: 0%
     }
 
-    body:not(.touched) .header-02 #menu ul.level-1 > li > a:hover > span:after,
-    body:not(.touched) .header-02 #menu ul.level-1 > li > a:hover > span:before {
-        width: 0%
-    }
-
     .header-02 #menu ul.level-1 > li:last-child > a {
         padding: 0 0 0 1.5625rem
     }
@@ -11739,15 +11726,6 @@ body:not(.wnd-cms) .header-02 .logo-borders .logo-text-cell {
 
     .header-02 #menu ul.level-1 > li:first-child > a {
         padding: 0 1.5625rem 0 0
-    }
-
-    .header-02 #menu ul.level-1 > li.hover > a > span:after,
-    .header-02 #menu ul.level-1 > li.hover > a > span:before,
-    .header-02 #menu ul.level-1 > li.wnd-active-path > a > span:after,
-    .header-02 #menu ul.level-1 > li.wnd-active-path > a > span:before,
-    .header-02 #menu ul.level-1 > li.wnd-active > a > span:after,
-    .header-02 #menu ul.level-1 > li.wnd-active > a > span:before {
-        width: 0%;
     }
 
     .header-02 #menu ul.level-1 > li .mm-arrow {

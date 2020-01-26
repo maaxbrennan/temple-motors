@@ -11713,7 +11713,7 @@ body:not(.wnd-cms) .header-02 .logo-borders .logo-text-cell {
 
     body:not(.touched) .header-02 #menu ul.level-1 > li > a:hover > span:after,
     body:not(.touched) .header-02 #menu ul.level-1 > li > a:hover > span:before {
-        width: 51%
+        width: 0%
     }
 
     .header-02 #menu ul.level-1 > li:last-child > a {
@@ -11734,7 +11734,7 @@ body:not(.wnd-cms) .header-02 .logo-borders .logo-text-cell {
     .header-02 #menu ul.level-1 > li.wnd-active-path > a > span:before,
     .header-02 #menu ul.level-1 > li.wnd-active > a > span:after,
     .header-02 #menu ul.level-1 > li.wnd-active > a > span:before {
-        width: 51%
+        width: 0%
     }
 
     .header-02 #menu ul.level-1 > li .mm-arrow {

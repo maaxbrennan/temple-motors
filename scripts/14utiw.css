@@ -3394,8 +3394,8 @@ body.wnd-cms:not(.touched) .cs-gray .sc-d .wnd-active-listing-zone .pager a:hove
 }
 
 .cs-gray .sc-d.footer-font.typo-02 .b-text a {
-    color: #707070;
-    border-color: #707070
+    color: white;
+    border-color: white;
 }
 
 body:not(.touched):not(.wnd-cms) .cs-gray .sc-d.footer-font.typo-02 .b-text a:hover {

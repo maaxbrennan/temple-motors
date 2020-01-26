@@ -11704,11 +11704,11 @@ body:not(.wnd-cms) .header-02 .logo-borders .logo-text-cell {
     }
 
     .header-02 #menu ul.level-1 > li > a > span:before {
-        left: 50%
+        left: 0%
     }
 
     .header-02 #menu ul.level-1 > li > a > span:after {
-        right: 50%
+        right: 0%
     }
 
     body:not(.touched) .header-02 #menu ul.level-1 > li > a:hover > span:after,
